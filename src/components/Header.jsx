@@ -35,7 +35,7 @@ export function Header() {
         </Link>
         
         {/* Pill nav — Midnight Luxe */}
-        <div className="hidden md:flex items-center gap-1 bg-obsidian/70 border border-champagne/20 backdrop-blur-md rounded-full px-3 py-1.5">
+        <div className="hidden md:flex items-center gap-1 bg-obsidian/20 border border-champagne/15 backdrop-blur-xl rounded-full px-3 py-1.5">
           <Link
             to="/about"
             className="relative px-4 py-1.5 font-data text-xs tracking-widest uppercase text-ivory/70 hover:text-champagne transition-colors duration-300 group"
