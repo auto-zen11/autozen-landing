@@ -28,14 +28,14 @@ export function Header() {
     <header className="fixed top-0 left-0 w-full z-40 px-6 py-4 md:px-12 md:py-6 pointer-events-none">
       <nav
         ref={headerRef}
-        className="pointer-events-auto flex items-center justify-between transition-colors duration-300 rounded-2xl px-6 py-4"
+        className="pointer-events-auto relative flex items-center justify-between transition-colors duration-300 rounded-2xl px-6 py-4"
       >
         <Link to="/" className="flex items-center">
           <img src={logoImg} alt="Autozen" className="h-[56px] md:h-[64px] object-contain" />
         </Link>
         
-        {/* Pill nav — Midnight Luxe */}
-        <div className="hidden md:flex items-center gap-1 bg-obsidian/20 border border-champagne/15 backdrop-blur-xl rounded-full px-3 py-1.5">
+        {/* Pill nav — Midnight Luxe — centrado absoluto */}
+        <div className="hidden md:flex items-center gap-1 bg-obsidian/20 border border-champagne/15 backdrop-blur-xl rounded-full px-3 py-1.5 absolute left-1/2 -translate-x-1/2">
           <Link
             to="/"
             className="relative px-4 py-1.5 font-data text-xs tracking-widest uppercase text-ivory/70 hover:text-champagne transition-colors duration-300 group"
