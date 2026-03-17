@@ -48,7 +48,7 @@ export function Header() {
             href="/#features"
             className="relative px-4 py-1.5 font-data text-xs tracking-widest uppercase text-ivory/70 hover:text-champagne transition-colors duration-300 group"
           >
-            Protocolo
+            Proceso
             <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-px bg-champagne group-hover:w-3/4 transition-all duration-300 rounded-full" />
           </a>
           <span className="w-px h-3 bg-champagne/20 mx-1" />

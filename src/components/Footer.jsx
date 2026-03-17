@@ -32,7 +32,7 @@ export function Footer() {
             
             <div className="flex gap-6">
               <a href="#" className="hover:text-champagne transition-colors">Privacidad</a>
-              <a href="#" className="hover:text-champagne transition-colors">Protocolos</a>
+              <a href="#" className="hover:text-champagne transition-colors">Procesos</a>
             </div>
           </div>
 
