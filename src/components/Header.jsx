@@ -70,7 +70,7 @@ export function Header() {
         </div>
 
         <a href="https://www.cal.eu/auto-zen/30min?user=auto-zen&overlayCalendar=true&date=2026-03-17" target="_blank" rel="noopener noreferrer" className="btn-magnetic bg-ivory text-obsidian px-6 py-2 rounded-full text-sm inline-block">
-          <span>Iniciar Sistema</span>
+          <span>Solicitar nuestros servicios</span>
         </a>
       </nav>
     </header>
