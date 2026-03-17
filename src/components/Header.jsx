@@ -37,6 +37,14 @@ export function Header() {
         {/* Pill nav — Midnight Luxe */}
         <div className="hidden md:flex items-center gap-1 bg-obsidian/20 border border-champagne/15 backdrop-blur-xl rounded-full px-3 py-1.5">
           <Link
+            to="/"
+            className="relative px-4 py-1.5 font-data text-xs tracking-widest uppercase text-ivory/70 hover:text-champagne transition-colors duration-300 group"
+          >
+            Inicio
+            <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-px bg-champagne group-hover:w-3/4 transition-all duration-300 rounded-full" />
+          </Link>
+          <span className="w-px h-3 bg-champagne/20 mx-1" />
+          <Link
             to="/about"
             className="relative px-4 py-1.5 font-data text-xs tracking-widest uppercase text-ivory/70 hover:text-champagne transition-colors duration-300 group"
           >
