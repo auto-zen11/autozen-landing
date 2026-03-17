@@ -34,10 +34,31 @@ export function Header() {
           <img src={logoImg} alt="Autozen" className="h-[56px] md:h-[64px] object-contain" />
         </Link>
         
-        <div className="hidden md:flex items-center gap-8 font-data text-sm tracking-wider text-ivory/80 uppercase">
-          <Link to="/about" className="hover:text-champagne transition-colors">¿Quiénes somos?</Link>
-          <a href="/#features" className="hover:text-champagne transition-colors">Protocolo</a>
-          <a href="/#philosophy" className="hover:text-champagne transition-colors">Filosofía</a>
+        {/* Pill nav — Midnight Luxe */}
+        <div className="hidden md:flex items-center gap-1 bg-obsidian/70 border border-champagne/20 backdrop-blur-md rounded-full px-3 py-1.5">
+          <Link
+            to="/about"
+            className="relative px-4 py-1.5 font-data text-xs tracking-widest uppercase text-ivory/70 hover:text-champagne transition-colors duration-300 group"
+          >
+            ¿Quiénes somos?
+            <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-px bg-champagne group-hover:w-3/4 transition-all duration-300 rounded-full" />
+          </Link>
+          <span className="w-px h-3 bg-champagne/20 mx-1" />
+          <a
+            href="/#features"
+            className="relative px-4 py-1.5 font-data text-xs tracking-widest uppercase text-ivory/70 hover:text-champagne transition-colors duration-300 group"
+          >
+            Protocolo
+            <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-px bg-champagne group-hover:w-3/4 transition-all duration-300 rounded-full" />
+          </a>
+          <span className="w-px h-3 bg-champagne/20 mx-1" />
+          <a
+            href="/#philosophy"
+            className="relative px-4 py-1.5 font-data text-xs tracking-widest uppercase text-ivory/70 hover:text-champagne transition-colors duration-300 group"
+          >
+            Filosofía
+            <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-px bg-champagne group-hover:w-3/4 transition-all duration-300 rounded-full" />
+          </a>
         </div>
 
         <a href="https://www.cal.eu/auto-zen/30min?user=auto-zen&overlayCalendar=true&date=2026-03-17" target="_blank" rel="noopener noreferrer" className="btn-magnetic bg-ivory text-obsidian px-6 py-2 rounded-full text-sm inline-block">
