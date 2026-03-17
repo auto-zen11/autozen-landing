@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body {
+    @apply bg-obsidian text-ivory antialiased selection:bg-champagne selection:text-obsidian scroll-smooth;
+    overflow-x: hidden;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Custom Magnetic Button Layer Transition */
+.btn-magnetic {
+  @apply relative overflow-hidden inline-flex items-center justify-center rounded-huge font-title font-medium transition-transform duration-300 ease-out z-10;
+}
+
+.btn-magnetic::before {
+  content: '';
+  @apply absolute inset-0 bg-champagne translate-y-[101%] transition-transform duration-300 ease-out z-[-1];
+}
+
+.btn-magnetic:hover {
+  transform: scale(1.03);
+}
+
+.btn-magnetic:hover::before {
+  transform: translateY(0);
+}
+
+.btn-magnetic:hover span {
+  @apply text-obsidian;
+}
