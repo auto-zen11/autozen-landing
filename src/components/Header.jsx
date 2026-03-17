@@ -2,6 +2,7 @@ import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import logoImg from '../assets/iso-white.png';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -30,7 +31,7 @@ export function Header() {
         className="pointer-events-auto flex items-center justify-between transition-colors duration-300 rounded-2xl px-6 py-4"
       >
         <Link to="/" className="flex items-center">
-          <img src="/src/assets/iso-white.png" alt="Autozen" className="h-[56px] md:h-[64px] object-contain" />
+          <img src={logoImg} alt="Autozen" className="h-[56px] md:h-[64px] object-contain" />
         </Link>
         
         <div className="hidden md:flex items-center gap-8 font-data text-sm tracking-wider text-ivory/80 uppercase">
