@@ -7,32 +7,17 @@ export default {
   theme: {
     extend: {
       colors: {
-        obsidian: '#0D0D12',
-        champagne: '#C9A84C',
-        ivory: '#FAF8F5',
-        slate: '#2A2A35',
+        background: '#0A0A14', // Vacío Profundo
+        primary: '#7B61FF',    // Plasma
+        textGhost: '#F0EFF4',      // Fantasma
+        surface: '#18181B',    // Grafito
       },
       fontFamily: {
-        title: ['"Inter"', 'sans-serif'],
-        drama: ['"Playfair Display"', 'serif'],
-        data: ['"JetBrains Mono"', 'monospace'],
+        sans: ['Sora', 'sans-serif'],
+        serif: ['Instrument Serif', 'serif'],
+        mono: ['Fira Code', 'monospace'],
       },
-      borderRadius: {
-        'large': '2rem',
-        'huge': '3rem',
-      },
-      keyframes: {
-        slideUp: {
-          '0%': { transform: 'translateY(100%)', opacity: '0' },
-          '100%': { transform: 'translateY(0)', opacity: '1' },
-        },
-        expand: {
-          '0%, 100%': { width: '25%' },
-          '50%': { width: '85%' },
-        }
-      }
     },
   },
   plugins: [],
 }
-

@@ -1,40 +1,38 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
-  html, body {
-    @apply bg-obsidian text-ivory antialiased selection:bg-champagne selection:text-obsidian scroll-smooth;
+  body {
+    @apply bg-background text-textGhost;
     overflow-x: hidden;
   }
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+@layer components {
+  /* Magnetic Button Reset */
+  .btn-magnetic {
+    @apply relative inline-flex items-center justify-center overflow-hidden rounded-[2rem] px-8 py-4 font-sans text-sm font-medium tracking-wide transition-transform duration-300 ease-out;
   }
-}
+  
+  .btn-primary {
+    @apply bg-primary text-white;
+  }
+  
+  .btn-magnetic span.label {
+    @apply relative z-10;
+  }
+  
+  .btn-magnetic::before {
+    content: '';
+    @apply absolute inset-0 z-0 bg-white/20 translate-y-full transition-transform duration-300 ease-out rounded-[2rem];
+  }
+  
+  .btn-magnetic:hover::before {
+    @apply translate-y-0;
+  }
 
-/* Custom Magnetic Button Layer Transition */
-.btn-magnetic {
-  @apply relative overflow-hidden inline-flex items-center justify-center rounded-huge font-title font-medium transition-transform duration-300 ease-out z-10;
-}
-
-.btn-magnetic::before {
-  content: '';
-  @apply absolute inset-0 bg-champagne translate-y-[101%] transition-transform duration-300 ease-out z-[-1];
-}
-
-.btn-magnetic:hover {
-  transform: scale(1.03);
-}
-
-.btn-magnetic:hover::before {
-  transform: translateY(0);
-}
-
-.btn-magnetic:hover span {
-  @apply text-obsidian;
+  .btn-magnetic:hover {
+    transform: scale(1.03);
+  }
 }
