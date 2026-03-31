@@ -42,7 +42,7 @@ export const Header = () => {
           <a href="#features" className="text-white/70 hover:text-white transition-colors">Sistemas</a>
           <a href="#philosophy" className="text-white/70 hover:text-white transition-colors">Filosofía</a>
           <a href="#protocol" className="text-white/70 hover:text-white transition-colors">Protocolo</a>
-          <a href="#products" className="text-white/70 hover:text-white transition-colors">Productos</a>
+          <a href="#products" className="text-white/70 hover:text-white transition-colors">Servicios</a>
         </div>
         <button className="btn-magnetic btn-primary !py-2 !px-6 !text-xs hidden md:inline-flex">
           <span className="label">Agendar Reunión</span>
