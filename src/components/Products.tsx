@@ -58,7 +58,7 @@ export const Products = () => {
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="mb-20 text-center">
           <span className="font-mono text-primary text-xs tracking-widest uppercase mb-4 block animate-fade-in">
-            Nuestra Tecnología_
+            Nuestros Servicios_
           </span>
           <h2 className="text-5xl md:text-7xl font-sans font-bold uppercase tracking-tighter mb-8 leading-none">
             Soluciones de <span className="font-serif italic text-primary lowercase tracking-normal">Escalabilidad</span>
