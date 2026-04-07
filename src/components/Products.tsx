@@ -80,9 +80,9 @@ export const Products = () => {
             <div
               key={product.id}
               ref={el => { cardsRef.current[index] = el; }}
-              className="group relative"
+              className="group relative h-full flex"
             >
-              <div className="relative aspect-[4/5] md:aspect-[3/4] overflow-hidden rounded-[3rem] border border-white/5 bg-surface/50 backdrop-blur-xl transition-all duration-500 hover:border-primary/30">
+              <div className="relative w-full h-full min-h-[550px] md:min-h-[600px] lg:min-h-[650px] overflow-hidden rounded-[3rem] border border-white/5 bg-surface/50 backdrop-blur-xl transition-all duration-500 hover:border-primary/30 flex flex-col">
                 {/* Product Image */}
                 <img 
                   src={product.image} 
@@ -94,7 +94,7 @@ export const Products = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent pointer-events-none" />
 
                 {/* Content Overlay */}
-                <div className="absolute inset-0 p-8 md:p-12 flex flex-col justify-end">
+                <div className="relative z-10 w-full h-full p-6 md:p-8 lg:p-10 flex flex-col justify-end flex-grow mt-auto">
                   <div className="mb-6 flex items-center justify-between">
                     <div className="w-16 h-16 rounded-2xl bg-primary/20 backdrop-blur-lg border border-primary/30 flex items-center justify-center text-primary group-hover:scale-110 group-hover:rotate-3 transition-transform duration-500">
                       {product.icon}
@@ -104,7 +104,7 @@ export const Products = () => {
                     </span>
                   </div>
 
-                  <h3 className="text-3xl md:text-4xl font-sans font-bold uppercase tracking-tight mb-4 group-hover:text-primary transition-colors duration-300">
+                  <h3 className="text-2xl md:text-3xl font-sans font-bold uppercase tracking-tight mb-4 group-hover:text-primary transition-colors duration-300">
                     {product.title}
                   </h3>
                   
