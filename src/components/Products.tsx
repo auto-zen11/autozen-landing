@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
-import { FileText, Users, ArrowUpRight } from 'lucide-react';
+import { FileText, Users, Target, ArrowUpRight } from 'lucide-react';
 
 const products = [
   {
@@ -20,6 +20,15 @@ const products = [
     image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=1200',
     icon: <Users className="w-8 h-8" />,
     features: ['Segmentación Hyper-Target', 'Shadow Personalization', 'Automatización de Alcance']
+  },
+  {
+    id: 'product-03',
+    title: 'Infraestructura de Captación de Clientes',
+    label: 'Lead_Generation',
+    description: 'Convierte tu empresa en una máquina de generar oportunidades automáticamente. Instalamos un sistema interno que encuentra y organiza clientes potenciales cada día (emails, teléfonos, webs). Tu sistema propio funcionando 24/7.',
+    image: 'https://images.unsplash.com/photo-1614729939124-032f0b56c9ce?auto=format&fit=crop&q=80&w=1200',
+    icon: <Target className="w-8 h-8" />,
+    features: ['Autonomía 24/7', 'Datos Listos', 'Sin Intermediarios']
   }
 ];
 
@@ -66,7 +75,7 @@ export const Products = () => {
           <div className="w-24 h-px bg-primary/30 mx-auto" />
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-24">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
           {products.map((product, index) => (
             <div
               key={product.id}
