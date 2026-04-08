@@ -44,9 +44,9 @@ export const Header = () => {
           <a href="#protocol" className="text-white/70 hover:text-white transition-colors">Protocolo</a>
           <a href="#products" className="text-white/70 hover:text-white transition-colors">Servicios</a>
         </div>
-        <button className="btn-magnetic btn-primary !py-2 !px-6 !text-xs hidden md:inline-flex">
+        <a href="https://cal.com" target="_blank" rel="noopener noreferrer" className="btn-magnetic btn-primary !py-2 !px-6 !text-xs hidden md:inline-flex items-center justify-center">
           <span className="label">Agendar Reunión</span>
-        </button>
+        </a>
       </nav>
     </header>
   );

@@ -73,59 +73,62 @@ export const Features = () => {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         
         {/* Card 1: Shuffler */}
-        <div className="feature-card bg-surface/40 border border-white/5 rounded-[2.5rem] p-8 relative overflow-hidden group">
-          <div className="absolute top-0 right-0 p-6 opacity-20">
+        <div className="feature-card bg-surface/20 backdrop-blur-2xl border border-white/10 hover:border-primary/40 shadow-[0_8px_32px_0_rgba(123,97,255,0.05)] hover:shadow-[0_8px_32px_0_rgba(123,97,255,0.15)] transition-all duration-500 rounded-[2.5rem] p-8 relative overflow-hidden group">
+          <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+          <div className="absolute top-0 right-0 p-6 opacity-20 group-hover:opacity-40 group-hover:text-primary transition-all duration-500">
             <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
           </div>
-          <div className="h-40 mb-8 border border-white/10 rounded-[1.5rem] bg-[#0d0d18] p-4 flex flex-col justify-center shuffler-container overflow-hidden">
+          <div className="h-40 mb-8 border border-white/10 group-hover:border-primary/20 rounded-[1.5rem] bg-[#0a0a14]/80 shadow-inner p-4 flex flex-col justify-center shuffler-container overflow-hidden relative z-10 transition-colors duration-500">
              <div className="font-mono text-xs text-textGhost/60 space-y-2">
-               <div className="shuffler-item flex justify-between"><span>CAPEX</span><span className="text-red-400">-45%</span></div>
-               <div className="shuffler-item flex justify-between"><span>OPEX</span><span className="text-red-400">-30%</span></div>
-               <div className="shuffler-item flex justify-between"><span>OUTPUT</span><span className="text-primary">+300%</span></div>
+               <div className="shuffler-item flex justify-between group-hover:text-white transition-colors"><span>CAPEX</span><span className="text-red-400 group-hover:text-red-300">-45%</span></div>
+               <div className="shuffler-item flex justify-between group-hover:text-white transition-colors"><span>OPEX</span><span className="text-red-400 group-hover:text-red-300">-30%</span></div>
+               <div className="shuffler-item flex justify-between group-hover:text-white transition-colors"><span>OUTPUT</span><span className="text-primary group-hover:text-primary/80">+300%</span></div>
              </div>
           </div>
-          <h3 className="font-sans text-xl font-medium mb-3">Escalar sin invertir excesivamente</h3>
-          <p className="font-sans text-sm text-textGhost/60 font-light leading-relaxed">
+          <h3 className="font-sans text-2xl font-bold uppercase tracking-tight mb-3 text-white/90 group-hover:text-primary transition-colors duration-300 relative z-10">Escalar sin invertir excesivamente</h3>
+          <p className="font-sans text-sm text-textGhost/70 font-light leading-relaxed relative z-10">
             Sistemas ligeros que amplifican tu capacidad operativa sin la necesidad de inflar tu estructura de costos.
           </p>
         </div>
 
         {/* Card 2: Typewriter */}
-        <div className="feature-card bg-surface/40 border border-white/5 rounded-[2.5rem] p-8 relative overflow-hidden group">
-          <div className="absolute top-0 right-0 p-6 opacity-20">
+        <div className="feature-card bg-surface/20 backdrop-blur-2xl border border-white/10 hover:border-primary/40 shadow-[0_8px_32px_0_rgba(123,97,255,0.05)] hover:shadow-[0_8px_32px_0_rgba(123,97,255,0.15)] transition-all duration-500 rounded-[2.5rem] p-8 relative overflow-hidden group">
+          <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+          <div className="absolute top-0 right-0 p-6 opacity-20 group-hover:opacity-40 group-hover:text-primary transition-all duration-500">
             <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
           </div>
-          <div className="h-40 mb-8 border border-white/10 rounded-[1.5rem] bg-[#0d0d18] p-4 flex flex-col justify-end">
+          <div className="h-40 mb-8 border border-white/10 group-hover:border-primary/20 rounded-[1.5rem] bg-[#0a0a14]/80 shadow-inner p-4 flex flex-col justify-end relative z-10 transition-colors duration-500">
              <div className="font-mono text-xs text-primary mb-2 flex items-center gap-2">
-                <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
+                <span className="w-2 h-2 rounded-full bg-primary animate-pulse shadow-[0_0_10px_rgba(123,97,255,0.8)]" />
                 <span>TERMINAL_ACTIVA</span>
              </div>
              <div className="font-mono text-xs text-textGhost/80 typewriter-target border-r-2 border-primary pr-1 min-h-[1rem]">
                 {/* Text injected by GSAP */}
              </div>
           </div>
-          <h3 className="font-sans text-xl font-medium mb-3">Eliminar cuellos de botella</h3>
-          <p className="font-sans text-sm text-textGhost/60 font-light leading-relaxed">
+          <h3 className="font-sans text-2xl font-bold uppercase tracking-tight mb-3 text-white/90 group-hover:text-primary transition-colors duration-300 relative z-10">Eliminar cuellos de botella</h3>
+          <p className="font-sans text-sm text-textGhost/70 font-light leading-relaxed relative z-10">
             Identificamos puntos de fricción estructurales y desplegamos secuencias automáticas para erradicar la latencia operativa.
           </p>
         </div>
 
         {/* Card 3: Scheduler */}
-        <div className="feature-card bg-surface/40 border border-white/5 rounded-[2.5rem] p-8 relative overflow-hidden group">
-          <div className="absolute top-0 right-0 p-6 opacity-20">
+        <div className="feature-card bg-surface/20 backdrop-blur-2xl border border-white/10 hover:border-primary/40 shadow-[0_8px_32px_0_rgba(123,97,255,0.05)] hover:shadow-[0_8px_32px_0_rgba(123,97,255,0.15)] transition-all duration-500 rounded-[2.5rem] p-8 relative overflow-hidden group">
+          <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+          <div className="absolute top-0 right-0 p-6 opacity-20 group-hover:opacity-40 group-hover:text-primary transition-all duration-500">
             <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
           </div>
-          <div className="h-40 mb-8 border border-white/10 rounded-[1.5rem] bg-[#0d0d18] p-4 flex flex-col justify-center relative">
-             <div className="absolute top-1/2 left-4 right-4 h-px bg-white/10 -translate-y-1/2" />
+          <div className="h-40 mb-8 border border-white/10 group-hover:border-primary/20 rounded-[1.5rem] bg-[#0a0a14]/80 shadow-inner p-4 flex flex-col justify-center relative z-10 transition-colors duration-500">
+             <div className="absolute top-1/2 left-4 right-4 h-px bg-white/10 group-hover:bg-primary/30 transition-colors duration-500 -translate-y-1/2" />
              <div className="absolute top-1/2 left-1/4 w-3 h-3 bg-primary rounded-full shadow-[0_0_15px_rgba(123,97,255,0.8)] -translate-y-1/2 transform transition-transform group-hover:translate-x-[400%] duration-1000 ease-in-out" />
              
              <div className="flex justify-between w-full relative z-10 px-2 mt-6">
-                <span className="font-mono text-[10px] text-textGhost/40">INPUT</span>
+                <span className="font-mono text-[10px] text-textGhost/40 group-hover:text-textGhost transition-colors">INPUT</span>
                 <span className="font-mono text-[10px] text-primary">MAX_EFFICIENCY</span>
              </div>
           </div>
-          <h3 className="font-sans text-xl font-medium mb-3">Multiplicar la eficiencia</h3>
-          <p className="font-sans text-sm text-textGhost/60 font-light leading-relaxed">
+          <h3 className="font-sans text-2xl font-bold uppercase tracking-tight mb-3 text-white/90 group-hover:text-primary transition-colors duration-300 relative z-10">Multiplicar la eficiencia</h3>
+          <p className="font-sans text-sm text-textGhost/70 font-light leading-relaxed relative z-10">
             Protocolos de IA que ejecutan a la velocidad del código, permitiendo a tu equipo humano enfocarse en trabajo de alto valor.
           </p>
         </div>

@@ -1,26 +1,8 @@
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
-import { FileText, Users, Target, ArrowUpRight } from 'lucide-react';
+import { Target, ArrowUpRight } from 'lucide-react';
 
 const products = [
-  {
-    id: 'product-01',
-    title: 'Facturación Autónoma',
-    label: 'Finance_Automation',
-    description: 'Elimina el error humano y recupera el 80% del tiempo administrativo. Un flujo que gestiona, valida y procesa facturas en su totalidad de forma autónoma.',
-    image: 'https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&q=80&w=1200',
-    icon: <FileText className="w-8 h-8" />,
-    features: ['Validación IA', 'Integración ERP', 'Conciliación Automática']
-  },
-  {
-    id: 'product-02',
-    title: 'Lead-Gen B2B Pro',
-    label: 'Growth_Engine',
-    description: 'Captación de leads de alto valor diseñada específicamente para agencias de marketing y consultoras. Escala tu pipeline con precisión quirúrgica.',
-    image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=1200',
-    icon: <Users className="w-8 h-8" />,
-    features: ['Segmentación Hyper-Target', 'Shadow Personalization', 'Automatización de Alcance']
-  },
   {
     id: 'product-03',
     title: 'Infraestructura de Captación de Clientes',
@@ -75,7 +57,7 @@ export const Products = () => {
           <div className="w-24 h-px bg-primary/30 mx-auto" />
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
+        <div className="grid grid-cols-1 max-w-xl mx-auto gap-8 lg:gap-12">
           {products.map((product, index) => (
             <div
               key={product.id}

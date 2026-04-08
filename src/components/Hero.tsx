@@ -38,7 +38,7 @@ export const Hero = () => {
       <div className="absolute inset-0 z-0">
         <img 
           src="https://images.unsplash.com/photo-1614729939124-032f0b5610ce?auto=format&fit=crop&w=2000&q=80" 
-          alt="Bioluminescence fluid neon" 
+          alt="" 
           className="w-full h-full object-cover opacity-60 mix-blend-screen"
         />
         {/* Gradient overlays to blend smoothly into the deep void background */}
@@ -67,9 +67,9 @@ export const Hero = () => {
         </p>
         
         <div className="hero-cta">
-          <button className="btn-magnetic btn-primary shadow-[0_0_40px_-10px_rgba(123,97,255,0.6)]">
+          <a href="https://cal.com" target="_blank" rel="noopener noreferrer" className="btn-magnetic btn-primary shadow-[0_0_40px_-10px_rgba(123,97,255,0.6)] inline-flex items-center justify-center">
             <span className="label font-bold tracking-widest uppercase">Agendar Reunión</span>
-          </button>
+          </a>
         </div>
       </div>
     </section>
