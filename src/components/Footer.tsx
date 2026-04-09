@@ -8,7 +8,7 @@ export const Footer = () => {
           <span className="font-serif italic text-primary/80 normal-case font-light">Secuencia.</span>
         </h2>
         
-        <a href="https://cal.com" target="_blank" rel="noopener noreferrer" className="btn-magnetic btn-primary shadow-[0_0_50px_-10px_rgba(123,97,255,0.8)] mb-32 !px-12 !py-6 !text-lg inline-flex items-center justify-center">
+        <a href="https://cal.com/javiergg/30min?user=javiergg&overlayCalendar=true" target="_blank" rel="noopener noreferrer" className="btn-magnetic btn-primary shadow-[0_0_50px_-10px_rgba(123,97,255,0.8)] mb-32 !px-12 !py-6 !text-lg inline-flex items-center justify-center">
           <span className="label font-bold tracking-widest uppercase">Agendar Reunión</span>
         </a>
 
