@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
 import gsap from 'gsap';
 import { Target, ArrowUpRight } from 'lucide-react';
 
@@ -105,11 +106,14 @@ export const Products = () => {
                     ))}
                   </div>
 
-                  <button className="w-full btn-magnetic border border-white/10 hover:border-primary/50 bg-white/5 backdrop-blur-md rounded-2xl py-4 flex items-center justify-center gap-2 group/btn transition-all duration-300 overflow-hidden relative">
+                  <Link 
+                    to="/producto/infraestructura" 
+                    className="w-full btn-magnetic border border-white/10 hover:border-primary/50 bg-white/5 backdrop-blur-md rounded-2xl py-4 flex items-center justify-center gap-2 group/btn transition-all duration-300 overflow-hidden relative"
+                  >
                     <div className="absolute inset-0 bg-primary/10 translate-y-full hover:translate-y-0 transition-transform duration-300 pointer-events-none" />
                     <span className="font-sans font-bold text-xs uppercase tracking-widest relative z-10">Ver Detalles_</span>
                     <ArrowUpRight className="w-4 h-4 group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1 transition-transform relative z-10" />
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>
