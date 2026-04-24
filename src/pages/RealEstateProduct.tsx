@@ -93,7 +93,7 @@ export const RealEstateProduct = () => {
         ease: 'power3.out'
       });
 
-      elementsRef.current.forEach((el, i) => {
+      elementsRef.current.forEach((el) => {
         if (!el) return;
         gsap.from(el, {
           scrollTrigger: {
