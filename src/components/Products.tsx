@@ -27,6 +27,18 @@ const products = [
     ctaText: 'Ver Detalles_',
     link: '/productos/sistema-conversion-inmobiliarias',
     isExternal: false
+  },
+  {
+    id: 'product-05',
+    title: 'Sistema de Conversión de Pacientes para Clínicas Dentales',
+    label: 'Dental_Clinics',
+    description: 'Convierte más consultas en citas confirmadas con un sistema que responde automáticamente a pacientes, gestiona la agenda y reduce cancelaciones sin aumentar el personal.',
+    image: 'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&q=80&w=1200',
+    icon: <Building className="w-8 h-8" />,
+    features: ['Respuesta 24/7', 'Gestión de Citas', 'Recordatorios'],
+    ctaText: 'Ver Detalles_',
+    link: '/productos/sistema-conversion-clinicas-dentales',
+    isExternal: false
   }
 ];
 
@@ -73,7 +85,7 @@ export const Products = () => {
           <div className="w-24 h-px bg-primary/30 mx-auto" />
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 max-w-6xl mx-auto gap-8 lg:gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto gap-8 lg:gap-12">
           {products.map((product, index) => (
             <div
               key={product.id}
