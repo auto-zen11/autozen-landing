@@ -25,8 +25,8 @@ const products = [
     icon: <Building className="w-8 h-8" />,
     features: ['Respuesta 24/7', 'Cualificación', 'Agenda Automática'],
     ctaText: 'Ver Detalles_',
-    link: 'https://cal.com/javiergg/30min?user=javiergg&overlayCalendar=true',
-    isExternal: true
+    link: '/productos/sistema-conversion-inmobiliarias',
+    isExternal: false
   }
 ];
 
