@@ -24,7 +24,7 @@ const products = [
     image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=1200',
     icon: <Building className="w-8 h-8" />,
     features: ['Respuesta 24/7', 'Cualificación', 'Agenda Automática'],
-    ctaText: 'Solicitar Demo_',
+    ctaText: 'Ver Detalles_',
     link: 'https://cal.com/javiergg/30min?user=javiergg&overlayCalendar=true',
     isExternal: true
   }
