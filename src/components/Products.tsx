@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import gsap from 'gsap';
-import { Target, ArrowUpRight } from 'lucide-react';
+import { Target, ArrowUpRight, Building } from 'lucide-react';
 
 const products = [
   {
@@ -11,7 +11,22 @@ const products = [
     description: 'Convierte tu empresa en una máquina de generar oportunidades automáticamente. Instalamos un sistema interno que encuentra y organiza clientes potenciales cada día (emails, teléfonos, webs). Tu sistema propio funcionando 24/7.',
     image: 'https://images.unsplash.com/photo-1614729939124-032f0b56c9ce?auto=format&fit=crop&q=80&w=1200',
     icon: <Target className="w-8 h-8" />,
-    features: ['Autonomía 24/7', 'Datos Listos', 'Sin Intermediarios']
+    features: ['Autonomía 24/7', 'Datos Listos', 'Sin Intermediarios'],
+    ctaText: 'Ver Detalles_',
+    link: '/producto/infraestructura',
+    isExternal: false
+  },
+  {
+    id: 'product-04',
+    title: 'Sistema de Conversión para Inmobiliarias',
+    label: 'Real_Estate',
+    description: 'Sistema automatizado para promotoras e inmobiliarias que responde al instante a los leads, los cualifica, resuelve dudas sobre inmuebles, muestra información e imágenes de propiedades y agenda visitas de forma automática.',
+    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=1200',
+    icon: <Building className="w-8 h-8" />,
+    features: ['Respuesta 24/7', 'Cualificación', 'Agenda Automática'],
+    ctaText: 'Solicitar Demo_',
+    link: 'https://cal.com/javiergg/30min?user=javiergg&overlayCalendar=true',
+    isExternal: true
   }
 ];
 
@@ -58,7 +73,7 @@ export const Products = () => {
           <div className="w-24 h-px bg-primary/30 mx-auto" />
         </div>
 
-        <div className="grid grid-cols-1 max-w-xl mx-auto gap-8 lg:gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 max-w-6xl mx-auto gap-8 lg:gap-12">
           {products.map((product, index) => (
             <div
               key={product.id}
@@ -106,14 +121,27 @@ export const Products = () => {
                     ))}
                   </div>
 
-                  <Link 
-                    to="/producto/infraestructura" 
-                    className="w-full btn-magnetic border border-white/10 hover:border-primary/50 bg-white/5 backdrop-blur-md rounded-2xl py-4 flex items-center justify-center gap-2 group/btn transition-all duration-300 overflow-hidden relative"
-                  >
-                    <div className="absolute inset-0 bg-primary/10 translate-y-full hover:translate-y-0 transition-transform duration-300 pointer-events-none" />
-                    <span className="font-sans font-bold text-xs uppercase tracking-widest relative z-10">Ver Detalles_</span>
-                    <ArrowUpRight className="w-4 h-4 group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1 transition-transform relative z-10" />
-                  </Link>
+                  {product.isExternal ? (
+                    <a 
+                      href={product.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-full btn-magnetic border border-white/10 hover:border-primary/50 bg-white/5 backdrop-blur-md rounded-2xl py-4 flex items-center justify-center gap-2 group/btn transition-all duration-300 overflow-hidden relative"
+                    >
+                      <div className="absolute inset-0 bg-primary/10 translate-y-full hover:translate-y-0 transition-transform duration-300 pointer-events-none" />
+                      <span className="font-sans font-bold text-xs uppercase tracking-widest relative z-10">{product.ctaText}</span>
+                      <ArrowUpRight className="w-4 h-4 group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1 transition-transform relative z-10" />
+                    </a>
+                  ) : (
+                    <Link 
+                      to={product.link} 
+                      className="w-full btn-magnetic border border-white/10 hover:border-primary/50 bg-white/5 backdrop-blur-md rounded-2xl py-4 flex items-center justify-center gap-2 group/btn transition-all duration-300 overflow-hidden relative"
+                    >
+                      <div className="absolute inset-0 bg-primary/10 translate-y-full hover:translate-y-0 transition-transform duration-300 pointer-events-none" />
+                      <span className="font-sans font-bold text-xs uppercase tracking-widest relative z-10">{product.ctaText}</span>
+                      <ArrowUpRight className="w-4 h-4 group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1 transition-transform relative z-10" />
+                    </Link>
+                  )}
                 </div>
               </div>
             </div>
